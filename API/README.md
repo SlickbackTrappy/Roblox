@@ -22,5 +22,6 @@ Example:
 ```lua
 local api = loadstring(game:HttpGet("https://raw.githubusercontent.com/SlickbackTrappy/Roblox/main/API/main.lua"))()
 
-api.removeConnectionsFromInstance(game:GetService("Players").LocalPlayer.Character.Humanoid) --// Any Humanoid Connections Are Removed
+--// Any Humanoid Connections Are Removed
+api.removeConnectionsFromInstance(game:GetService("Players").LocalPlayer.Character.Humanoid) 
 ```
