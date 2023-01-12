@@ -10,3 +10,17 @@ Begin by inserting this snippet of code into your script:
 ```lua
 local api = loadstring(game:HttpGet("https://raw.githubusercontent.com/SlickbackTrappy/Roblox/main/API/main.lua"))()
 ```
+
+## Functions
+
+<h2>removeConnectionsFromInstance</h2>
+Removes all connection events on the specified instance.
+
+Function Data: (instance, otherEvents)
+
+Example:
+```lua
+local api = loadstring(game:HttpGet("https://raw.githubusercontent.com/SlickbackTrappy/Roblox/main/API/main.lua"))()
+
+api.removeConnectionsFromInstance(game:GetService("Players").LocalPlayer.Character.Humanoid) --// Any Humanoid Connections Are Removed
+```
