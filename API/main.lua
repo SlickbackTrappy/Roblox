@@ -66,19 +66,19 @@ function api.fixServiceNames()
 end
 
 function api.create(class, parent, props, children)
-	if not class then
-		return warn("[API-ERROR] Failed to find class.")
-	end
-	props = props or {}
-	children = children or {}
-	local obj = Instance.new(class, parent)
-	for prop, name in pairs(props) do
-		obj[prop] = name
-	end
-	for _, child in pairs(children) do
-		child.Parent = obj
-	end
-	return obj
+  if not class then
+    return warn("[API-ERROR] Failed to find class.")
+  end
+  props = props or {}
+  children = children or {}
+  local obj = Instance.new(class, parent)
+  for prop, name in pairs(props) do
+    obj[prop] = name
+  end
+  for _, child in pairs(children) do
+    child.Parent = obj
+  end
+  return obj
 end
 
 return api
