@@ -1,6 +1,6 @@
 <p align="center">
   <img src="https://avatars.githubusercontent.com/u/122176962?s=400&u=5c469eddd71bbfe804045e7756cc85761db865b2&v=4">
-  <h3 align="center">"Bitch dependency is no laughing matter." - A Pimp Named Slickback</h1>
+  <h3 align="center">"Bitch dependency is no laughing matter." - A Pimp Named Slickback</h3>
 </p>
 
 ## Info
@@ -13,7 +13,7 @@ local api = loadstring(game:HttpGet("https://raw.githubusercontent.com/Slickback
 
 ## Functions
 
-<h2>removeConnectionsFromInstance</h2>
+<h3>removeConnectionsFromInstance</h3>
 Removes all connection events on the specified instance.
 
 Function Data: (instance, otherEvents)
