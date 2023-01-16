@@ -81,4 +81,24 @@ function api.Create(class, parent, props, children)
   return obj
 end
 
+function api.GetLocalTime()
+    local Time = os.date("%X"):split(":");
+    local Second, Minutes, Hour = Time[3], Time[2], Time[1];
+
+    local AmPm = "AM";
+    if tonumber(Hour) > 12 then
+        AmPm = "PM";
+        Hour = tonumber(Hour) - 12;
+    end
+
+    return string.format("%s:%s:%s", Hour, Minutes, Second) .. " " .. AmPm;
+end
+
+function api.GetLocalDate()
+    local Date = os.date("%x"):split("/");
+    local Day, Month, Year = Date[1], Date[2], Date[3];
+
+    return string.format("%s/%s/%s", Day, Month, Year);
+end
+
 return api
