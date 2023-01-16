@@ -15,8 +15,8 @@ function api.RemoveConnectionsFromInstance(v, otherEvents)
   end
 end
 
-function api.Protect(v, parent)
-  api.removeConnectionsFromInstance(parent)
+function api.Protect(v)
+  api.removeConnectionsFromInstance(v.Parent)
   local mt = getrawmetatable(game)
   local oldindex = mt.__index
   local oldnc = mt.__namecall
