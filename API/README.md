@@ -28,12 +28,12 @@ api:RemoveConnectionsFromInstance(game:GetService("Players").LocalPlayer.Charact
 <h3>Protect</h3>
 Protects the listed part from any client detections. 
 
-Function Data: (instance, parent)
+Function Data: (instance)
 
 Example:
 ```lua
 local api = loadstring(game:HttpGet("https://raw.githubusercontent.com/SlickbackTrappy/Roblox/main/API/main.lua"))()
 
 --// Protects 'Part' from any client sided detections.
-api:Protect(workspace.Part, workspace) 
+api:Protect(workspace.Part) 
 ```
