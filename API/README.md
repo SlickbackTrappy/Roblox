@@ -23,5 +23,5 @@ Example:
 local api = loadstring(game:HttpGet("https://raw.githubusercontent.com/SlickbackTrappy/Roblox/main/API/main.lua"))()
 
 --// Any Humanoid Connections Are Removed
-api.removeConnectionsFromInstance(game:GetService("Players").LocalPlayer.Character.Humanoid) 
+api:removeConnectionsFromInstance(game:GetService("Players").LocalPlayer.Character.Humanoid) 
 ```
