@@ -13,7 +13,7 @@ local api = loadstring(game:HttpGet("https://raw.githubusercontent.com/Slickback
 
 ## Functions
 
-<h3>removeConnectionsFromInstance</h3>
+<h3>RemoveConnectionsFromInstance</h3>
 Removes all connection events on the specified instance.
 
 Function Data: (instance, otherEvents)
@@ -23,5 +23,5 @@ Example:
 local api = loadstring(game:HttpGet("https://raw.githubusercontent.com/SlickbackTrappy/Roblox/main/API/main.lua"))()
 
 --// Any Humanoid Connections Are Removed
-api:removeConnectionsFromInstance(game:GetService("Players").LocalPlayer.Character.Humanoid) 
+api:RemoveConnectionsFromInstance(game:GetService("Players").LocalPlayer.Character.Humanoid) 
 ```
