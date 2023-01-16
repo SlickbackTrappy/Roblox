@@ -75,3 +75,25 @@ local coolPart = api:Create("Part", workspace, {
   Size = Vector3.new(3,3,3)
 }) 
 ```
+<h3>GetLocalTime</h3>
+Returns the time for the client. 
+
+Example:
+```lua
+local api = loadstring(game:HttpGet("https://raw.githubusercontent.com/SlickbackTrappy/Roblox/main/API/main.lua"))()
+
+--// Prints The Time.
+local realTime = api:GetLocalTime()
+print(realTime)
+```
+<h3>GetLocalDate</h3>
+Returns the date for the client. 
+
+Example:
+```lua
+local api = loadstring(game:HttpGet("https://raw.githubusercontent.com/SlickbackTrappy/Roblox/main/API/main.lua"))()
+
+--// Prints The Date.
+local realDate = api:GetLocalDate()
+print(realDate)
+```
