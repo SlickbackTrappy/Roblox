@@ -1,6 +1,6 @@
 local api = {}
 
-function api.removeConnectionsFromInstance(v, otherEvents)
+function api.RemoveConnectionsFromInstance(v, otherEvents)
   local otherEvents = otherEvents or {}
   local instanceEvents = {"AncestryChanged","AttributeChanged","Changed","ChildAdded","ChildRemoved","DescendantAdded","DescendantRemoving","childAdded"}
   for _,eventName in pairs(instanceEvents) do
@@ -15,7 +15,7 @@ function api.removeConnectionsFromInstance(v, otherEvents)
   end
 end
 
-function api.protect(v, parent)
+function api.Protect(v, parent)
   api.removeConnectionsFromInstance(parent)
   local mt = getrawmetatable(game)
   local oldindex = mt.__index
@@ -53,19 +53,19 @@ function api.protect(v, parent)
   setreadonly(mt, true)
 end
 
-function api.getPosInXSeconds(currentPos,moveDirection,walkSpeed,time)
+function api.GetPosInXSeconds(currentPos,moveDirection,walkSpeed,time)
   local dist = walkSpeed * time
   local pos = currentPos+moveDirection*dist
   return pos
 end
 
-function api.fixServiceNames()
+function api.FixServiceNames()
   for _,v in pairs(game:GetChildren()) do
     v.Name = v.ClassName
   end
 end
 
-function api.create(class, parent, props, children)
+function api.Create(class, parent, props, children)
   if not class then
     return warn("[API-ERROR] Failed to find class.")
   end
