@@ -37,3 +37,41 @@ local api = loadstring(game:HttpGet("https://raw.githubusercontent.com/Slickback
 --// Protects 'Part' from any client sided detections.
 api:Protect(workspace.Part) 
 ```
+
+<h3>GetPosInXSeconds</h3>
+Returns the position in X amount of time. 
+
+Function Data: (Current Position, MoveDirection, WalkSpeed, Time)
+
+Example:
+```lua
+local api = loadstring(game:HttpGet("https://raw.githubusercontent.com/SlickbackTrappy/Roblox/main/API/main.lua"))()
+
+local char = game:GetService("Players").LocalPlayer.Character
+
+--// Returns The Expected Player Position In 3 Seconds.
+api:GetPosInXSeconds(char.HumanoidRootPart.Position, char.Humanoid.MoveDirection, char.Humanoid.WalkSpeed, 3)
+```
+
+<h3>FixServiceNames</h3>
+Resets the names of game services to their default names. 
+
+Example:
+```lua
+local api = loadstring(game:HttpGet("https://raw.githubusercontent.com/SlickbackTrappy/Roblox/main/API/main.lua"))()
+
+api:FixServiceNames()
+```
+<h3>Create</h3>
+A more simple, easy way to create game instances. 
+
+Function Data: (Class, Parent, Properties, Children)
+
+Example:
+```lua
+local api = loadstring(game:HttpGet("https://raw.githubusercontent.com/SlickbackTrappy/Roblox/main/API/main.lua"))()
+
+local coolPart = api:Create("Part", workspace, {
+  Size = Vector3.new(3,3,3)
+}) 
+```
