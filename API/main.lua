@@ -4,10 +4,8 @@ function api.RemoveConnectionsFromInstance(v, otherEvents)
   local otherEvents = otherEvents or {}
   local instanceEvents = {"AncestryChanged","AttributeChanged","Changed","ChildAdded","ChildRemoved","DescendantAdded","DescendantRemoving","childAdded"}
   for _,eventName in pairs(instanceEvents) do
-    if getconnections(v[eventName]) then
-      for _,v in next,getconnections(v[eventName]) do
-        v:Disable()
-      end
+    for _,v in next,getconnections(v[eventName]) do
+      v:Disable()
     end
   end
   for _,eventName in pairs(otherEvents) do
